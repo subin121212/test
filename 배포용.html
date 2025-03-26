@@ -1,0 +1,98 @@
+<!DOCTYPE html>turkey/turkey.css turkey/index.css
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 960px;
+            height: 700px;
+            border: 5px, solid #303030;
+            display: flex;
+            /* margin: auto; */
+        }
+
+        .flex-item {
+            font-weight: bold;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .left {
+            /* width: 365px; */
+            /* 365 / 960 * 100 */
+            width: 38%;
+            background-color: rebeccapurple;
+        }
+        
+        .right {
+            /* width: 595px; */
+            width: 62%;
+            background-color: blue;
+        }
+        
+        .flex-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+        }
+
+        .flex-item:nth-of-type(1) {
+            background-color: red;
+        }
+
+        .flex-item:nth-of-type(2) {
+
+            background-color: rgb(230, 134, 24);
+        }
+
+        .flex-item:nth-of-type(3) {
+            background-color: yellow;
+        }
+
+        .flex-item:nth-of-type(4) {
+            background-color: green;
+        }
+
+        .flex-item:nth-of-type(5) {
+
+            background-color: rgb(182, 13, 197);
+        }
+
+        @media (max-width: 1000px) {
+
+            .flex-item{
+
+            }
+
+            .left {
+                background-color: blue;
+            }
+
+            .right {
+                background-color: blueviolet;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="flex-item left">left</div> -->
+        <!-- <div class="flex-item right">right</div> -->
+
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+</body>
+
+</html>
